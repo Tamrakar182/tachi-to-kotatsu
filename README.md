@@ -1,6 +1,6 @@
 # Tachiyomi to Kotatsu
 
-Making this to convert tachiyomi backup files to kotatsu backup files so that I can migrate to kotatsu.
+Making this to convert tachiyomi backup files to kotatsu backup files so that I can migrate to kotatsu. For now this works for .proto.gz tachiyomi backup files and not .tachibk files.
 
 ## Tachiyomi Extraction
 The data types present in tachiyomi is in ```tachi_classes.proto```. Compiling this proto file will give us the python classes to read the tachiyomi backup files. From the tachiyomi backup files, we can get the majorly following data:
@@ -62,10 +62,15 @@ The sources files has the list of all the sources available to kotatsu. Matching
 - [x] Unzip tachiyomi backup files
 - [x] Read tachiyomi backup files
 - [x] Convert tachiyomi backup files to json
-- [ ] Convert json to seperate kotatsu backup files
-- [ ] Conversion to Kotatsu Sources File
-- [ ] Conversion to Kotatsu Categories File
+- [x] Convert json to seperate kotatsu backup files
+- [x] Conversion to Kotatsu Sources File
+- [x] Conversion to Kotatsu Categories File
 - [ ] Conversion to Kotatsu Library File
+
+## Features Left (Don't know if will implement)
+
+- [ ] History Moving
+- [ ] Bookmarks Moving
 
 ## Enviroment Setup
 

@@ -1,0 +1,54 @@
+[
+  {
+    "reader_slider": true,
+    "reader_optimize": false,
+    "screenshots_policy": "allow",
+    "grid_size": 100,
+    "webtoon_zoom": true,
+    "downloads_wifi": false,
+    "tracker_enabled": true,
+    "list_mode_2": "LIST",
+    "tips_closed": [
+      "btn_read",
+      "suggestions"
+    ],
+    "zoom_mode": "FIT_CENTER",
+    "reader_background": "DARK",
+    "no_nsfw": false,
+    "nav_main": "FAVORITES,HISTORY,EXPLORE,SUGGESTIONS",
+    "reader_bar": true,
+    "theme": "-1",
+    "updates_unstable": false,
+    "prefetch_content": "2",
+    "sources_new": true,
+    "reader_mode": "WEBTOON",
+    "reader_mode_detect": true,
+    "reader_zoom_buttons": false,
+    "mirror_switching": true,
+    "track_sources": [
+      "favourites"
+    ],
+    "reader_switchers": [
+      "taps"
+    ],
+    "reading_indicators": true,
+    "enhanced_colors": false,
+    "amoled_theme": true,
+    "reader_taps_ltr": false,
+    "related_manga": true,
+    "reader_animation2": "DEFAULT",
+    "dynamic_shortcuts": true,
+    "tracker_wifi": true,
+    "exit_confirm": false,
+    "app_locale": "",
+    "sources_sort_order": "MANUAL",
+    "reader_screen_on": true,
+    "logging": false,
+    "suggestions": true,
+    "pages_preload": "2",
+    "doh": "NONE",
+    "sources_grid": false,
+    "pages_numbers": false,
+    "images_proxy": true
+  }
+]

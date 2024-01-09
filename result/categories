@@ -1,0 +1,74 @@
+[
+  {
+    "category_id": 1,
+    "created_at": 1704800959156,
+    "sort_key": 0,
+    "title": "Slice of Life",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 2,
+    "created_at": 1704800959156,
+    "sort_key": "1",
+    "title": "Seinen",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 3,
+    "created_at": 1704800959156,
+    "sort_key": "2",
+    "title": "Shounen",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 4,
+    "created_at": 1704800959156,
+    "sort_key": "3",
+    "title": "Fantasy",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 5,
+    "created_at": 1704800959156,
+    "sort_key": "4",
+    "title": "Isekai",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 6,
+    "created_at": 1704800959156,
+    "sort_key": "5",
+    "title": "Shojo",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 7,
+    "created_at": 1704800959156,
+    "sort_key": "6",
+    "title": "Manhwa",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  },
+  {
+    "category_id": 8,
+    "created_at": 1704800959156,
+    "sort_key": "7",
+    "title": "Completed",
+    "order": "NEWEST",
+    "track": true,
+    "show_in_lib": true
+  }
+]
