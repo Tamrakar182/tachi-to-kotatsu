@@ -16,7 +16,7 @@ Backup Manga has most of the data that we need.
 
 Kotatsu zips 6 json files into a single zip. It includes the following data:
 
-### Categories
+- ### Categories
 ```json
 {
     "category_id": 1,
@@ -30,7 +30,7 @@ Kotatsu zips 6 json files into a single zip. It includes the following data:
 ```
 The default will be used for the fields not present in the tachiyomi backup file. We only get the order/sort_key and title from the tachiyomi backup file. The rest will be set to default.
 
-### Sources
+- ### Sources
 ```json
 {
     "source": "<source name>",
@@ -40,7 +40,7 @@ The default will be used for the fields not present in the tachiyomi backup file
 ```
 The sources files has the list of all the sources available to kotatsu. Matching against the ones in tachiyomi, we can set the sources for the library to enables and sort so that the active sources are at top.
 
-### Index (default used)
+- ### Index (default used)
 ```json
   {
     "app_id": "org.koitharu.kotatsu",
@@ -50,14 +50,14 @@ The sources files has the list of all the sources available to kotatsu. Matching
 ```
 Contains the app version and app id. Not sure if this is needed. Default will be used
 
-### Settings (default used)
+- ### Settings (default used)
 Contains all the settings details. My default settings will be used.
 
-### Favorites
+- ### Favorites
 
-### History
+- ### History
 
-### Bookmarks (not working on)
+- ### Bookmarks (not working on)
 
 
 ## Checklist
@@ -73,20 +73,23 @@ Contains all the settings details. My default settings will be used.
 
 ## Features Left (Don't know if will implement)
 
-- [ ] History Moving
-- [ ] Bookmarks Moving
+- [ ] History 
+- [ ] Bookmarks 
 
 
 ## Enviroment Setup
-
+```bash
 ### Create Virtual Environment
-```python -m venv .\venv```
+python -m venv .\venv
 
 ### Activate Virtual Environment
-```venv\Scripts\activate.bat```
+venv\Scripts\activate.bat
 
 ### Install all the Dependencies
-```pip install -r requirements.txt```
+pip install -r requirements.txt
 
 ### Run the script
-```python main.py <path to tachiyomi backup file>```
+python main.py <path_to_tachiyomi_backup_file>
+```
+
+The Kotatsu backup files will be created in the same directory as the tachiyomi backup file, simply named kotatsu.zip.
