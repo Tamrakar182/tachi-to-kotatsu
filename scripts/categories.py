@@ -4,27 +4,23 @@ import os
 
 file_path = "output.json"
 
-with open(file_path, "r") as file:
-    data = json.load(file)
+try:
+    with open(file_path, "r") as file:
+        data = json.load(file)
+except FileNotFoundError:
+    print(f"File '{file_path}' not found.")
+    exit(1)
+except json.JSONDecodeError:
+    print(f"Error decoding JSON from '{file_path}'.")
+    exit(1)
 
 results = []
 
-for entry in data["backupCategories"]:
+for entry in data.get("backupCategories", []):
     name = entry['name']
     order = entry.get('order', 0)
     results.append((name, order))
 
-#  Category Structure from Kotatsu
-#  {
-#     "category_id": 1,
-#     "created_at": 1704781699296,
-#     "sort_key": "<Order>",
-#     "title": "<Name>",
-#     "order": "NEWEST",
-#     "track": true,
-#     "show_in_lib": true
-# }
-    
 categories = [
     {
         "category_id": i + 1,
@@ -40,5 +36,14 @@ categories = [
 
 new_file_path = os.path.join('./result/', 'categories')
 
-with open(new_file_path, 'w') as f:
-    json.dump(categories, f, indent=2)
+os.makedirs(os.path.dirname(new_file_path), exist_ok=True)
+
+try:
+    with open(new_file_path, 'w') as f:
+        json.dump(categories, f, indent=2)
+except PermissionError:
+    print(f"Permission denied for '{new_file_path}'.")
+    exit(1)
+except Exception as e:
+    print(f"An error occurred while writing to '{new_file_path}': {e}")
+    exit(1)
