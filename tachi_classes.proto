@@ -34,7 +34,7 @@ message BackupManga {
     int64 favoriteModifiedAt = 107;
 }
 
-message BackupCategory {
+message BackupChapter {
     string url = 1;
     string name = 2;
     string scanlator = 3;
